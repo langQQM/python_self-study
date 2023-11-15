@@ -12,8 +12,9 @@ with open("test.csv", "r") as f:
     r=csv.reader(f, delimiter=",")
     # print(r)
     for row in r:
+        if r is None or r =="":
+            continue
         print(",".join(row))
 
 # one,tow,three
-
 # four,five,six
